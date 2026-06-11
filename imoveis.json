@@ -1,7 +1,7 @@
 [
   {
-    "id": "imovel-1781188575601",
-    "referencia": "AP-0002",
+    "id": "imovel-1781188695827",
+    "referencia": "AP-0001",
     "nome": "EDIFÍCIO N&F",
     "local": "Ciudad del Este - KM 7, Dom Bosco - Prox. à UPE CDE",
     "tipo": "aluguel",
@@ -20,13 +20,13 @@
     ],
     "status": "disponivel",
     "garantia": "2.500.000",
-    "taxaImobiliaria": "1.000.000",
-    "arCondicionado": "Sim",
-    "aguaInclusa": "Sim",
-    "lixoIncluso": "Sim",
-    "portaoEletrico": "Sim",
-    "cameraSeguranca": "Sim",
-    "aceitaPet": "Não",
+    "taxaImobiliaria": "1.350.000 Gs",
+    "arCondicionado": "",
+    "aguaInclusa": "",
+    "lixoIncluso": "",
+    "portaoEletrico": "",
+    "cameraSeguranca": "",
+    "aceitaPet": "",
     "currentImage": 0
   },
   {
@@ -64,7 +64,7 @@
     "portaoEletrico": "Sim",
     "cameraSeguranca": "Sim",
     "aceitaPet": "Sim",
-    "currentImage": 7
+    "currentImage": 0
   },
   {
     "id": "imovel-001",
