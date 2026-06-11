@@ -1,0 +1,27 @@
+[
+  {
+    "id": "imovel-001",
+    "referencia": "NX-001",
+    "tipo": "aluguel",
+    "status": "disponivel",
+    "imagens": [
+      "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=900&q=80"
+    ],
+    "categoria": "Apartamento",
+    "nome": "Residencial Ycua",
+    "local": "Encarnación, Paraguai",
+    "quartos": "3",
+    "banhos": "2",
+    "area": "95 m²",
+    "preco": "₲ 4.200.000",
+    "periodo": "por mês",
+    "garantia": "",
+    "taxaImobiliaria": "",
+    "arCondicionado": "",
+    "aguaInclusa": "",
+    "lixoIncluso": "",
+    "portaoEletrico": "",
+    "cameraSeguranca": "",
+    "aceitaPet": ""
+  }
+]
