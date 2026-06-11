@@ -1,14 +1,14 @@
 [
   {
-    "id": "imovel-1781188695827",
+    "id": "imovel-1781188860893",
     "referencia": "AP-0001",
-    "nome": "EDIFÍCIO N&F",
+    "nome": "EDIFÍCIO ROMERO Y MORA",
     "local": "Ciudad del Este - KM 7, Dom Bosco - Prox. à UPE CDE",
     "tipo": "aluguel",
     "categoria": "APARTAMENTO",
-    "preco": "2.000.000",
+    "preco": "2.700.000 Gs",
     "periodo": "por mês ",
-    "quartos": "1",
+    "quartos": "2",
     "banhos": "1",
     "area": "",
     "imagens": [
@@ -64,7 +64,7 @@
     "portaoEletrico": "Sim",
     "cameraSeguranca": "Sim",
     "aceitaPet": "Sim",
-    "currentImage": 0
+    "currentImage": 3
   },
   {
     "id": "imovel-001",
