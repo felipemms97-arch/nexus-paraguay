@@ -53,12 +53,99 @@
   .imovel-nome{font-size:20px!important;}
 }
 
+
+/* ===== GUIA PRÁTICO / DICAS ===== */
+.dicas-section{
+  max-width:1180px;
+  margin:auto;
+  padding:70px 24px;
+  background:linear-gradient(180deg,#050505,#071613);
+  border-top:1px solid var(--line);
+}
+.dicas-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:34px;
+}
+.dica-card{
+  background:linear-gradient(180deg,rgba(15,61,46,.84),rgba(10,18,16,.96));
+  border:1px solid var(--line);
+  padding:24px;
+}
+.dica-card h3{
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:18px;
+  margin-bottom:14px;
+}
+.dica-card ol{
+  padding-left:18px;
+  color:#ddd;
+  font-size:14px;
+  line-height:1.7;
+}
+.dica-card li{
+  margin-bottom:8px;
+}
+@media(max-width:850px){
+  .dicas-grid{grid-template-columns:1fr!important;gap:16px!important}
+  .dicas-section{padding:42px 18px!important}
+  .dica-card{padding:20px!important}
+}
+
 </style></head><body>
-<div class="hero"><header><a class="brand" href="#"><div class="mark">N</div><div><strong>NEXUS</strong><span>PARAGUAY</span></div></a><nav><a href="#sobre">Sobre nós</a><a href="#solucoes">Soluções</a><a href="#vantagens">Vantagens</a><a href="#contato">Contato</a><a class="btn-outline" href="https://wa.me/595994786182">Fale conosco</a></nav></header><main class="hero-content"><div class="eyebrow">Brasil • Paraguai • Investimentos</div><h1>A ponte entre o Brasil e as oportunidades do Paraguai.</h1><p class="subtitle">Soluções completas para viver, investir, empreender e estruturar seu patrimônio no Paraguai.</p><a class="btn-primary" href="https://wa.me/595994786182">Falar com especialista</a></main></div>
+<div class="hero"><header><a class="brand" href="#"><div class="mark">N</div><div><strong>NEXUS</strong><span>PARAGUAY</span></div></a><nav><a href="#sobre">Sobre nós</a><a href="#solucoes">Soluções</a><a href="#vantagens">Vantagens</a><a href="#dicas">Dicas</a><a href="#contato">Contato</a><a class="btn-outline" href="https://wa.me/595994786182">Fale conosco</a></nav></header><main class="hero-content"><div class="eyebrow">Brasil • Paraguai • Investimentos</div><h1>A ponte entre o Brasil e as oportunidades do Paraguai.</h1><p class="subtitle">Soluções completas para viver, investir, empreender e estruturar seu patrimônio no Paraguai.</p><a class="btn-primary" href="https://wa.me/595994786182">Falar com especialista</a></main></div>
 <div id="solucoes" class="cards"><a class="card" href="#imoveis"><div class="icon">▣</div><h3>Nexus Imobiliária</h3><p>Aluguel de casas, apartamentos e salas comerciais</p></a><div class="card"><div class="icon">◈</div><h3>Nexus Migração</h3><p>Residência temporal e permanente, radicação, permiso, cédula paraguaia, documentação para estudantes e matriculas</p></div><div class="card"><div class="icon">▤</div><h3>Nexus Business</h3><p>Abertura de empresas, inscrição no registro único de contribuintes - RUC, solicitação de patente comercial, tramites de DINAVISA e legalizações.</p></div><div class="card"><div class="icon">▲</div><h3>Nexus Invest</h3><p>Oportunidades, estruturação financeira e estratégias para investidores.</p></div></div>
 <section id="sobre" class="about"><div><div class="section-title">Sobre a Nexus Paraguay</div><h2>Seu futuro no Paraguay começa aqui.</h2><p>A Nexus Paraguay nasceu para ser a conexão estratégica entre brasileiros e as melhores oportunidades no Paraguai. Atuamos com documentação migratória, estruturação empresarial, imóveis, investimentos e suporte completo para quem deseja morar, investir ou empreender com segurança.</p></div><div class="box"><div class="list"><div><strong>01.</strong> Atendimento estratégico para brasileiros no Paraguai.</div><div><strong>02.</strong> Soluções para estudantes, empresários e investidores.</div><div><strong>03.</strong> Apoio documental, imobiliário e empresarial.</div><div><strong>04.</strong> Visão internacional com presença local.</div></div></div></section>
 <section id="vantagens" class="about"><div class="box"><div class="list"><div><strong>Confiança.</strong> Processo claro, seguro e acompanhado.</div><div><strong>Estratégia.</strong> Cada cliente recebe orientação conforme seu objetivo.</div><div><strong>Patrimônio.</strong> Foco em crescimento, imóveis e oportunidades reais.</div><div><strong>Conexão.</strong> Brasil e Paraguai com visão prática e empresarial.</div></div></div><div><div class="section-title">Vantagens</div><h2>Mais que assessoria. Uma entrada estratégica no Paraguai.</h2><p>Nossa proposta é unir orientação, execução e acompanhamento para transformar burocracia em oportunidade. Você chega ao Paraguai com um plano, não apenas com documentos.</p></div></section>
 <section id="imoveis"><div class="imoveis-header"><div><div class="section-title">Nexus Imobiliária</div><h2>Imóveis Disponíveis no Paraguai</h2></div><div class="filters"><button class="filter-btn active" onclick="filterImoveis('todos',this)">Todos</button><button class="filter-btn" onclick="filterImoveis('aluguel',this)">Aluguel</button><button class="filter-btn" onclick="filterImoveis('venda',this)">Venda</button><button class="filter-btn" onclick="filterImoveis('comercial',this)">Comercial</button></div></div><div class="admin-login"><button class="admin-locked" onclick="adminLogin()">Área restrita</button><button class="admin-logged" onclick="adminLogout()">Sair da área restrita</button></div><details class="property-manager"><summary>Gerenciar imóveis</summary><p class="manager-note">Cadastre, edite, oculte ou exclua imóveis diretamente pelo site. Ao clicar em salvar online, as alterações são gravadas no arquivo <strong>imoveis.json</strong> do GitHub e aparecem para todos.</p><div class="admin-config"><input id="repoOwner" placeholder="Usuário do GitHub"><input id="repoName" placeholder="Repositório"><input id="githubToken" type="password" placeholder="Token secreto do GitHub"><div class="small-admin-note">Use um token Fine-grained com permissão Contents: Read and write apenas neste repositório.</div></div><form class="property-form" onsubmit="addProperty(event)"><input id="propReferencia" placeholder="Referência. Ex: NX-001" required><input id="propNome" placeholder="Nome do imóvel" required><input id="propLocal" placeholder="Localização" required><select id="propTipo"><option value="aluguel">Aluguel</option><option value="venda">Venda</option><option value="comercial">Comercial</option></select><input id="propCategoria" placeholder="Categoria" required><input id="propPreco" placeholder="Preço" required><input id="propPeriodo" placeholder="Período"><input id="propQuartos" placeholder="Quartos"><input id="propBanhos" placeholder="Banheiros"><input id="propArea" placeholder="Área"><input id="propImagens" type="file" accept="image/*" multiple required><input id="propGarantia" placeholder="Garantia"><input id="propTaxaImobiliaria" placeholder="Taxa imobiliária"><select id="propArCondicionado"><option value="">Ar condicionado?</option><option>Sim</option><option>Não</option></select><select id="propAguaInclusa"><option value="">Água inclusa?</option><option>Sim</option><option>Não</option></select><select id="propLixoIncluso"><option value="">Recolhimento de Lixo?</option><option>Sim</option><option>Não</option></select><select id="propPortaoEletrico"><option value="">Portão elétrico?</option><option>Sim</option><option>Não</option></select><select id="propCameraSeguranca"><option value="">Câmera?</option><option>Sim</option><option>Não</option></select><select id="propAceitaPet"><option value="">Aceita pet?</option><option>Sim</option><option>Não</option></select><select id="propStatus"><option value="disponivel">Disponível</option><option value="alugado">Alugado</option><option value="vendido">Vendido / Comprado</option><option value="oculto">Oculto / Não publicado</option></select><button type="submit">Adicionar imóvel</button><button type="button" onclick="saveOnline()">Salvar online</button></form></details><div class="imoveis-grid" id="imoveisGrid"></div></section>
+
+<section id="dicas" class="dicas-section">
+  <div class="section-title">Nexus Dicas</div>
+  <h2 style="font-size:42px;line-height:1.1;max-width:760px;margin-bottom:18px;">
+    Guia prático para quem vai morar no Paraguai
+  </h2>
+  <p style="color:#ccc;line-height:1.7;max-width:760px;">
+    Um passo a passo simples para organizar sua chegada, montar sua casa e resolver os principais serviços do dia a dia.
+  </p>
+
+  <div class="dicas-grid">
+    <div class="dica-card">
+      <h3>Internet para casa</h3>
+      <ol>
+        <li>Entre em contato com o número <a href="https://wa.me/595971100000" target="_blank" style="color:#C8A45D;font-weight:bold;">+595 971 100000</a> ou pelo site <a href="https://www.personal.com.py" target="_blank" style="color:#C8A45D;font-weight:bold;">www.personal.com.py</a> e solicite sua internet pela empresa Personal.</li>
+      </ol>
+    </div>
+
+    <div class="dica-card">
+      <h3>Chip para telefone</h3>
+      <ol>
+        <li>Vá até o endereço da Claro: <a href="https://maps.app.goo.gl/zAoJyWVjTcbwCvkc8" target="_blank" style="color:#C8A45D;font-weight:bold;">Abrir localização</a>.</li>
+        <li>Leve seu RG atualizado e guarani para solicitar seu chip.</li>
+      </ol>
+    </div>
+
+    
+
+    <div class="dica-card">
+      <h3>Serviços</h3>
+      <ol>
+        <li>Gás de cozinha:</li>
+        <li>Instalação de ar condicionado: <a href="https://wa.me/595983684377" target="_blank" style="color:#C8A45D;font-weight:bold;">+595 983 684377</a> (Técnico Ignacio)</li>
+      </ol>
+    </div>
+
+    <div class="dica-card">
+      <h3>Móveis</h3>
+      <ol>
+        <li>Paraná Colchones y Sommiers: <a href="https://maps.app.goo.gl/JuN9twmRrueKQ5Zb8" target="_blank" style="color:#C8A45D;font-weight:bold;">Abrir localização</a></li>
+        <li>N&N Moveis: <a href="https://maps.app.goo.gl/dFWR9xTfCJUaQBkt5" target="_blank" style="color:#C8A45D;font-weight:bold;">Abrir localização</a></li>
+      </ol>
+    </div>
+  </div>
+</section>
 <section id="contato" class="final"><h2>Pronto para começar?</h2><p>Fale com a Nexus Paraguay e descubra o melhor caminho para viver, investir ou empreender no Paraguai.</p><a class="btn-primary" href="https://wa.me/595994786182">Falar com especialista</a></section><footer>NEXUS PARAGUAY © 2026 — Seu futuro no Paraguay começa aqui.</footer>
 <div class="edit-modal" id="editModal"><div class="edit-box"><span class="edit-close" onclick="closeEditProperty()">×</span><h3>Editar imóvel</h3><form class="edit-form" onsubmit="saveEditedProperty(event)"><input type="hidden" id="editId"><input id="editReferencia" placeholder="Referência" required><input id="editNome" placeholder="Nome" required><input id="editLocal" placeholder="Localização" required><select id="editTipo"><option value="aluguel">Aluguel</option><option value="venda">Venda</option><option value="comercial">Comercial</option></select><input id="editCategoria" placeholder="Categoria"><input id="editPreco" placeholder="Preço"><input id="editPeriodo" placeholder="Período"><input id="editQuartos" placeholder="Quartos"><input id="editBanhos" placeholder="Banheiros"><input id="editArea" placeholder="Área"><div id="editCurrentImages" style="grid-column:1/-1"></div><input id="editImagens" type="file" accept="image/*" multiple style="grid-column:1/-1"><input id="editGarantia" placeholder="Garantia"><input id="editTaxaImobiliaria" placeholder="Taxa imobiliária"><select id="editArCondicionado"><option value="">Ar condicionado?</option><option>Sim</option><option>Não</option></select><select id="editAguaInclusa"><option value="">Água inclusa?</option><option>Sim</option><option>Não</option></select><select id="editLixoIncluso"><option value="">Recolhimento de Lixo?</option><option>Sim</option><option>Não</option></select><select id="editPortaoEletrico"><option value="">Portão elétrico?</option><option>Sim</option><option>Não</option></select><select id="editCameraSeguranca"><option value="">Câmera?</option><option>Sim</option><option>Não</option></select><select id="editAceitaPet"><option value="">Aceita pet?</option><option>Sim</option><option>Não</option></select><select id="editStatus"><option value="disponivel">Disponível</option><option value="alugado">Alugado</option><option value="vendido">Vendido / Comprado</option><option value="oculto">Oculto</option></select><button>Salvar alterações</button><button type="button" class="edit-cancel" onclick="closeEditProperty()">Cancelar</button></form></div></div><div class="image-modal" id="imageModal"><span class="modal-close" onclick="closeImageModal()">×</span><img id="modalImage"></div>
 <script>
